@@ -1,0 +1,10 @@
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\obj\Debug\WindowsFormsApp31.csproj.AssemblyReference.cache
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\obj\Debug\WindowsFormsApp31.Form1.resources
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\obj\Debug\WindowsFormsApp31.Properties.Resources.resources
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\obj\Debug\WindowsFormsApp31.csproj.GenerateResource.cache
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\obj\Debug\WindowsFormsApp31.csproj.CoreCompileInputs.cache
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\bin\Debug\WindowsFormsApp31.exe.config
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\bin\Debug\WindowsFormsApp31.exe
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\bin\Debug\WindowsFormsApp31.pdb
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\obj\Debug\WindowsFormsApp31.exe
+C:\Users\Юлия\source\repos\WindowsFormsApp31\WindowsFormsApp31\obj\Debug\WindowsFormsApp31.pdb
