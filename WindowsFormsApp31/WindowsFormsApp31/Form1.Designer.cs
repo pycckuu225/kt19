@@ -35,7 +35,6 @@ namespace WindowsFormsApp31
 			this.checkBoxSin = new System.Windows.Forms.CheckBox();
 			this.checkBoxCos = new System.Windows.Forms.CheckBox();
 			this.checkBoxEllipse = new System.Windows.Forms.CheckBox();
-			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -52,6 +51,7 @@ namespace WindowsFormsApp31
 			this.pictureBox1.Size = new System.Drawing.Size(758, 380);
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
 			// 
 			// button1
 			// 
@@ -82,59 +82,45 @@ namespace WindowsFormsApp31
 			this.checkBoxSin.AutoSize = true;
 			this.checkBoxSin.Checked = true;
 			this.checkBoxSin.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkBoxSin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(0)))));
+			this.checkBoxSin.ForeColor = System.Drawing.Color.Green;
 			this.checkBoxSin.Location = new System.Drawing.Point(18, 32);
 			this.checkBoxSin.Name = "checkBoxSin";
 			this.checkBoxSin.Size = new System.Drawing.Size(45, 17);
 			this.checkBoxSin.TabIndex = 0;
 			this.checkBoxSin.Text = "sin(x)";
 			this.checkBoxSin.UseVisualStyleBackColor = true;
-			this.checkBoxSin.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
 			// 
 			// checkBoxCos
 			// 
 			this.checkBoxCos.AutoSize = true;
 			this.checkBoxCos.Checked = true;
 			this.checkBoxCos.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkBoxCos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.checkBoxCos.ForeColor = System.Drawing.Color.Red;
 			this.checkBoxCos.Location = new System.Drawing.Point(18, 64);
 			this.checkBoxCos.Name = "checkBoxCos";
 			this.checkBoxCos.Size = new System.Drawing.Size(48, 17);
 			this.checkBoxCos.TabIndex = 1;
 			this.checkBoxCos.Text = "cos(x)";
 			this.checkBoxCos.UseVisualStyleBackColor = true;
-			this.checkBoxCos.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
 			// 
 			// checkBoxEllipse
 			// 
 			this.checkBoxEllipse.AutoSize = true;
 			this.checkBoxEllipse.Checked = true;
 			this.checkBoxEllipse.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkBoxEllipse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(200)))));
+			this.checkBoxEllipse.ForeColor = System.Drawing.Color.Blue;
 			this.checkBoxEllipse.Location = new System.Drawing.Point(18, 96);
 			this.checkBoxEllipse.Name = "checkBoxEllipse";
 			this.checkBoxEllipse.Size = new System.Drawing.Size(59, 17);
 			this.checkBoxEllipse.TabIndex = 2;
 			this.checkBoxEllipse.Text = "ellipse";
 			this.checkBoxEllipse.UseVisualStyleBackColor = true;
-			this.checkBoxEllipse.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
-			// 
-			// label1
-			// 
-			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.label1.ForeColor = System.Drawing.Color.DimGray;
-			this.label1.Location = new System.Drawing.Point(790, 214);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(190, 32);
-			this.label1.TabIndex = 3;
-			this.label1.Text = "Галочка включает\r\nи выключает кривую";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1000, 520);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.pictureBox1);
@@ -145,7 +131,6 @@ namespace WindowsFormsApp31
 			this.groupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
@@ -157,6 +142,5 @@ namespace WindowsFormsApp31
 		private System.Windows.Forms.CheckBox checkBoxSin;
 		private System.Windows.Forms.CheckBox checkBoxCos;
 		private System.Windows.Forms.CheckBox checkBoxEllipse;
-		private System.Windows.Forms.Label label1;
 	}
 }
