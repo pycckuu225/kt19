@@ -11,27 +11,21 @@ namespace WindowsFormsApp31
 			InitializeComponent();
 		}
 
-		// Кнопка — единственное, что перерисовывает график
 		private void button1_Click(object sender, EventArgs e)
 		{
-			pictureBox1.Invalidate();
-		}
+			Graphics g = pictureBox1.CreateGraphics();
+			g.Clear(Color.White);
 
-		private void pictureBox1_Paint(object sender, PaintEventArgs e)
-		{
-			Graphics g = e.Graphics;
 			int w = pictureBox1.Width;
 			int h = pictureBox1.Height;
 			int center = h / 2;
-
-			g.Clear(Color.White);
 
 			// sin — зелёный
 			if (checkBoxSin.Checked)
 			{
 				Point[] points = new Point[w];
 				for (int x = 0; x < w; x++)
-					points[x] = new Point(x, (int)(center - Math.Sin(2 * Math.PI * 3 * x / w) * h * 0.35));
+					points[x] = new Point(x, center - (int)(Math.Sin(2 * Math.PI * 3 * x / w) * h * 0.35));
 				g.DrawLines(new Pen(Color.Green, 2), points);
 			}
 
@@ -40,7 +34,7 @@ namespace WindowsFormsApp31
 			{
 				Point[] points = new Point[w];
 				for (int x = 0; x < w; x++)
-					points[x] = new Point(x, (int)(center - Math.Cos(2 * Math.PI * 3 * x / w) * h * 0.35));
+					points[x] = new Point(x, center - (int)(Math.Cos(2 * Math.PI * 3 * x / w) * h * 0.35));
 				g.DrawLines(new Pen(Color.Red, 2), points);
 			}
 
